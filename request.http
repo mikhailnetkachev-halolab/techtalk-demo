@@ -1,0 +1,33 @@
+
+GET http://localhost:3000/api/v1/actors
+
+###
+
+GET http://localhost:3000/api/v1/actors/1
+
+### 
+
+POST http://localhost:3000/api/v1/actors HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "Anton",
+    "lastname": "*",
+    "rating": 1
+}
+
+### 
+
+PUT http://localhost:3000/api/v1/actors/4 HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "Hugh",
+    "lastname": "Jackman",
+    "rating": 15
+}
+
+### 
+
+DELETE http://localhost:3000/api/v1/actors/1 HTTP/1.1
+
